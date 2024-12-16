@@ -1,0 +1,45 @@
+- defaults:
+    link:
+      relink: true
+      force: true
+      create: true
+
+- clean: ['~']
+
+- link:
+    ~/.gitconfig: git/.gitconfig
+    ~/.gitignore: git/.gitignore
+
+    ~/.Brewfile: brew/Brewfile
+
+    ~/.tool-versions: asdf/.tool-versions
+
+    ~/.docker/config.json: docker/config.json
+
+    ~/.config/aerospace/aerospace.toml: aerospace/aerospace.toml
+
+    ~/.config/linearmouse/linearmouse.json: linearmouse/linearmouse.json
+
+    ~/.config/tmux/tmux.conf: tmux/tmux.conf
+    ~/.config/tmux/theme.tmux: tmux/theme.tmux
+
+    ~/.config/wezterm/wezterm.lua: wezterm/wezterm.lua
+    ~/.config/wezterm/colors.lua: wezterm/colors.lua
+
+    ~/.zshrc: zsh/.zshrc
+    ~/.zprofile: zsh/.zprofile
+    ~/.zfunc/_rustup: zsh/.zfunc/_rustup
+
+    ~/.local/bin/macos-preferences: macos/preferences.sh
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - command: brew bundle install --file=~/.Brewfile
+      stdout: true
+      stderr: true
+      description: Installing Homebrew packages
+    - command: ~/.local/bin/macos-preferences restore
+      stdout: true
+      stderr: true
+      description: Restoring macOS preferences
+

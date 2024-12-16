@@ -1,0 +1,9 @@
+[user]
+	name = Ruslan
+	email = hi@ruslanpashkov.com
+[core]
+	pager = 
+	editor = vim
+	excludesfile = /Users/user/.gitignore
+[rerere]
+	enabled = true
