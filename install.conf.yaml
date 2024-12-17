@@ -26,6 +26,8 @@
     ~/.config/wezterm/wezterm.lua: wezterm/wezterm.lua
     ~/.config/wezterm/colors.lua: wezterm/colors.lua
 
+    ~/.config/zed/settings.json: zed/settings.json
+
     ~/.zshrc: zsh/.zshrc
     ~/.zprofile: zsh/.zprofile
     ~/.zfunc/_rustup: zsh/.zfunc/_rustup
