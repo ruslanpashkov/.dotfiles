@@ -1,0 +1,112 @@
+{
+  "security.workspace.trust.untrustedFiles": "open",
+
+  "workbench.tips.enabled": false,
+  "workbench.startupEditor": "none",
+  "workbench.settings.editor": "json",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.layoutControl.enabled": false,
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "catppuccin-perfect-dark",
+  "workbench.productIconTheme": "icons-carbon",
+
+  "window.commandCenter": false,
+
+  "zenMode.centerLayout": false,
+
+  "editor.fontFamily": "Fira Code",
+  "editor.fontSize": 16,
+  "editor.lineHeight": 1.61803398875,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "off",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.linkedEditing": true,
+  "editor.smoothScrolling": true,
+  "editor.autoIndent": "full",
+  "editor.tabCompletion": "on",
+  "editor.detectIndentation": false,
+  "editor.suggestSelection": "first",
+  "editor.quickSuggestionsDelay": 0,
+  "editor.inlineSuggest.enabled": true,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "selection",
+  "editor.scrollBeyondLastLine": true,
+  "editor.cursorStyle": "line",
+  "editor.glyphMargin": false,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "explicit",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.unicodeHighlight.ambiguousCharacters": true,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.lightbulb.enabled": "off",
+  "editor.accessibilitySupport": "off",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.wordSeparators": "`~!@#$%^&*()-_=+[{]}\\|;:'\",.<>/?",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 1.15,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+  "files.eol": "\n",
+  "files.autoSave": "onWindowChange",
+
+  "search.showLineNumbers": true,
+
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.icons": false,
+  "breadcrumbs.symbolPath": "off",
+
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+
+  "git.autofetch": true,
+  "git.autofetchPeriod": 3600,
+  "git.confirmSync": false,
+  "git.rebaseWhenSync": true,
+  "git.enableSmartCommit": true,
+
+  "diffEditor.hideUnchangedRegions.enabled": true,
+
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.excludeLanguages": [],
+  "emmet.includeLanguages": {
+    "markdown": "html"
+  },
+
+  "files.trimTrailingWhitespace": true,
+
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+
+  "html.autoClosingTags": true,
+
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.autoClosingTags": true,
+  "typescript.autoClosingTags": true,
+
+  "update.showReleaseNotes": false,
+
+  "telemetry.telemetryLevel": "off",
+
+  "git.replaceTagsWhenPull": true,
+  "git.ignoreRebaseWarning": true
+}
