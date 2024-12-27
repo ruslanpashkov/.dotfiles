@@ -26,6 +26,8 @@
     ~/.config/wezterm/wezterm.lua: wezterm/wezterm.lua
     ~/.config/wezterm/colors.lua: wezterm/colors.lua
 
+    ~/.config/ghostty/config: ghostty/config
+
     ~/.config/zed/settings.json: zed/settings.json
 
     ~/.config/Code/User/settings.json: vscode/settings.json
