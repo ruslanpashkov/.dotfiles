@@ -103,3 +103,4 @@ config.window_background_opacity = 1.0
 config.text_background_opacity = 1.0
 
 return config
+

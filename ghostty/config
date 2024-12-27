@@ -1,0 +1,24 @@
+font-family = "Fira Code Nerd Font Mono"
+
+background = 1f1f1f
+foreground = fafafa
+cursor-color = fafafa
+selection-background = 212121
+selection-foreground = fafafa
+
+palette = 0=#1a1a1a
+palette = 1=#e56375
+palette = 2=#75b975
+palette = 3=#f0b362
+palette = 4=#79b8ff
+palette = 5=#b392f0
+palette = 6=#9db1c5
+palette = 7=#c0c0c0
+palette = 8=#5c5c5c
+palette = 9=#ff7a84
+palette = 10=#85dc85
+palette = 11=#ffc966
+palette = 12=#93cbff
+palette = 13=#c4a9f3
+palette = 14=#b8cce0
+palette = 15=#dedede
