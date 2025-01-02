@@ -105,8 +105,6 @@
 
   "update.showReleaseNotes": false,
 
-  "telemetry.telemetryLevel": "off",
-
   "git.replaceTagsWhenPull": true,
   "git.ignoreRebaseWarning": true
 }
