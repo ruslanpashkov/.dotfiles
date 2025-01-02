@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "features": {
+    "inline_completion_provider": "none"
+  },
   "assistant": {
     "default_model": {
       "provider": "zed.dev",
@@ -15,7 +18,7 @@
     "version": "2"
   },
   "project_panel": {
-    "dock": "right"
+    "dock": "left"
   },
   "theme": {
     "mode": "system",
