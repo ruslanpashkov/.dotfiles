@@ -1,6 +1,5 @@
 tap "homebrew/bundle"
 tap "homebrew/services"
-tap "nikitabobko/tap"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
 # Command-line interface for SQLite
@@ -21,10 +20,14 @@ brew "dmenu"
 brew "docker"
 # Isolated development environments using Docker
 brew "docker-compose"
+# Perl lib for reading and writing EXIF metadata
+brew "exiftool"
 # Modern, maintained replacement for ls
 brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # Command-line tools for fly.io services
 brew "flyctl"
 # Command-line fuzzy finder written in Go
@@ -60,15 +63,17 @@ brew "neovim"
 # Platform built on V8 to build network applications
 brew "node"
 # Object-relational database system
-brew "postgresql@14", restart_service: true
+brew "postgresql@14", restart_service: :changed
 # Persistent key-value database, with built-in net interface
-brew "redis", restart_service: true
+brew "redis", restart_service: :changed
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Safe, concurrent, practical language
 brew "rust"
 # Rust toolchain installer
 brew "rustup"
+# User interface to the TELNET protocol
+brew "telnet"
 # Simplified and community-driven man pages
 brew "tldr"
 # Terminal multiplexer
@@ -83,8 +88,6 @@ brew "yq"
 brew "zoxide"
 # UNIX shell (command interpreter)
 brew "zsh"
-# AeroSpace is an i3-like tiling window manager for macOS
-cask "aerospace"
 # Enable Windows-like alt-tab
 cask "alt-tab"
 # Application uninstaller
@@ -99,8 +102,12 @@ cask "eloston-chromium"
 cask "firefox@nightly"
 # Digital audio production application
 cask "fl-studio"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
 # Web browser
 cask "google-chrome@canary"
+# Java IDE by JetBrains
+cask "intellij-idea"
 # Tool to prevent the system from going into sleep mode
 cask "keepingyouawake"
 # File archiver
@@ -131,7 +138,9 @@ cask "slack"
 cask "telegram"
 # Open-source BitTorrent client
 cask "transmission"
-# GPU-accelerated cross-platform terminal emulator and multiplexer
-cask "wezterm"
+# Open-source code editor
+cask "visual-studio-code"
+# Multiplayer code editor
+cask "zed"
 # Video communication and virtual meeting platform
 cask "zoom"
