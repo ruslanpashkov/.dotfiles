@@ -2,6 +2,8 @@ tap "homebrew/bundle"
 tap "homebrew/services"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
+# Command-line interface for SQLite
+brew "sqlite"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -52,12 +54,18 @@ brew "lazygit"
 brew "lua"
 # 'traceroute' and 'ping' in a single tool
 brew "mtr"
+# Open source relational database management system
+brew "mysql", restart_service: :changed
 # Fast, highly customisable system info script
 brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Platform built on V8 to build network applications
 brew "node"
+# Object-relational database system
+brew "postgresql@17", restart_service: :changed
+# Persistent key-value database, with built-in net interface
+brew "redis", restart_service: :changed
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Safe, concurrent, practical language
