@@ -2,14 +2,10 @@ tap "homebrew/bundle"
 tap "homebrew/services"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
-# Command-line interface for SQLite
-brew "sqlite"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.13"
 # Console Matrix
 brew "cmatrix"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -62,10 +58,6 @@ brew "neofetch"
 brew "neovim"
 # Platform built on V8 to build network applications
 brew "node"
-# Object-relational database system
-brew "postgresql@14", restart_service: :changed
-# Persistent key-value database, with built-in net interface
-brew "redis", restart_service: :changed
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Safe, concurrent, practical language
@@ -80,8 +72,6 @@ brew "tldr"
 brew "tmux"
 # Internet file retriever
 brew "wget"
-# Access X11 clipboards from the command-line
-brew "xclip"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
 # Shell extension to navigate your filesystem faster
@@ -100,22 +90,16 @@ cask "discord"
 cask "eloston-chromium"
 # Web browser
 cask "firefox@nightly"
-# Digital audio production application
-cask "fl-studio"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Web browser
 cask "google-chrome@canary"
-# Java IDE by JetBrains
-cask "intellij-idea"
+# Open-source screen recorder built with web technology
+cask "kap"
 # Tool to prevent the system from going into sleep mode
 cask "keepingyouawake"
 # File archiver
 cask "keka"
-# Customise mouse behavior
-cask "linearmouse"
-# Tool to control external monitor brightness & volume
-cask "monitorcontrol"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
 # Open-source software for live streaming and screen recording
@@ -138,8 +122,6 @@ cask "slack"
 cask "telegram"
 # Open-source BitTorrent client
 cask "transmission"
-# Open-source code editor
-cask "visual-studio-code"
 # Multiplayer code editor
 cask "zed"
 # Video communication and virtual meeting platform
