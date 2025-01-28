@@ -60,6 +60,8 @@ brew "mysql", restart_service: :changed
 brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# CLI for NextDNS's DNS-over-HTTPS (DoH)
+brew "nextdns"
 # Platform built on V8 to build network applications
 brew "node"
 # Object-relational database system
