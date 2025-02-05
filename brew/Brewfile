@@ -36,6 +36,8 @@ brew "gh"
 brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # User-friendly cURL replacement (command-line HTTP client)
@@ -50,6 +52,8 @@ brew "jq"
 brew "kubernetes-cli"
 # Simple terminal UI for git commands
 brew "lazygit"
+# Library for encoding and decoding .avif files
+brew "libavif"
 # Powerful, lightweight programming language
 brew "lua"
 # 'traceroute' and 'ping' in a single tool
@@ -110,6 +114,10 @@ cask "kap"
 cask "keepingyouawake"
 # File archiver
 cask "keka"
+# Customise mouse behavior
+cask "linearmouse"
+# Tool to control external monitor brightness & volume
+cask "monitorcontrol"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
 # Open-source software for live streaming and screen recording
