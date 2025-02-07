@@ -68,6 +68,8 @@ brew "neovim"
 brew "nextdns"
 # Platform built on V8 to build network applications
 brew "node"
+# Tools for one-time password authentication systems
+brew "oath-toolkit"
 # Object-relational database system
 brew "postgresql@17", restart_service: :changed
 # Persistent key-value database, with built-in net interface
@@ -98,6 +100,8 @@ cask "alt-tab"
 cask "appcleaner"
 # Desktop password and login vault
 cask "bitwarden"
+# Write, edit, and chat about your code with AI
+cask "cursor"
 # Voice and text chat software
 cask "discord"
 # Google Chromium, sans integration with Google
