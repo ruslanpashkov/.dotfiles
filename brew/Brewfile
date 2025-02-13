@@ -100,6 +100,10 @@ cask "alt-tab"
 cask "appcleaner"
 # Desktop password and login vault
 cask "bitwarden"
+# Scriptable scratchpad for developers
+cask "boop"
+# Opensource IDE for exploring and testing api's
+cask "bruno"
 # Write, edit, and chat about your code with AI
 cask "cursor"
 # Voice and text chat software
@@ -126,6 +130,10 @@ cask "monitorcontrol"
 cask "nordvpn"
 # Open-source software for live streaming and screen recording
 cask "obs"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
+# Replacement for Docker Desktop
+cask "orbstack"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Move and resize windows using keyboard shortcuts or snap areas
@@ -140,6 +148,8 @@ cask "signal"
 cask "skype"
 # Team communication and collaboration software
 cask "slack"
+# Video game digital distribution service
+cask "steam"
 # Messaging app with a focus on speed and security
 cask "telegram"
 # Open-source BitTorrent client
