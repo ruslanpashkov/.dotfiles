@@ -22,6 +22,8 @@ brew "docker-compose"
 brew "exiftool"
 # Modern, maintained replacement for ls
 brew "eza"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Play, record, convert, and stream audio and video
@@ -60,8 +62,6 @@ brew "lua"
 brew "mtr"
 # Open source relational database management system
 brew "mysql", restart_service: :changed
-# Fast, highly customisable system info script
-brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # CLI for NextDNS's DNS-over-HTTPS (DoH)
