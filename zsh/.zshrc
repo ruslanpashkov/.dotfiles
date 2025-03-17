@@ -1,3 +1,8 @@
+# Fix for unreliable profile sourcing, eg. switching to a second TTY
+if [[ -z "$PROFILE_SOURCED" ]]; then
+    source ~/.zprofile
+fi
+
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
@@ -34,23 +39,23 @@ plugins=(
   asdf
   docker
   kubectl
-  
+
   man
   colored-man-pages
   extract
   tldr
-  
+
   eza
   dirhistory
   copypath
-  
+
   tmux
   fzf
-  
+
   ssh
-  
+
   brew
-  
+
   command-not-found
   fast-syntax-highlighting
   zsh-autocomplete
@@ -89,7 +94,7 @@ fh() {
 
 tm() {
     local session=${1:-tmux}
-    
+
     if ! tmux has-session 2>/dev/null; then
         tmux new-session -s "$session"
     else
@@ -109,7 +114,3 @@ bindkey "^[[1;5D" backward-word
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 bindkey "^[[3~" delete-char
-
-if [ -z "$TMUX" ]; then
-    tm
-fi
