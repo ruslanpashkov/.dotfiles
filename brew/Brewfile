@@ -108,8 +108,12 @@ cask "bruno"
 cask "cursor"
 # Voice and text chat software
 cask "discord"
+# Client for the Dropbox cloud storage service
+cask "dropbox"
 # Google Chromium, sans integration with Google
 cask "eloston-chromium"
+# Desktop client for Filen.io
+cask "filen"
 # Web browser
 cask "firefox@nightly"
 # Terminal emulator that uses platform-native UI and GPU acceleration
@@ -144,8 +148,6 @@ cask "safari-technology-preview"
 cask "shottr"
 # Instant messaging application focusing on security
 cask "signal"
-# Video chat, voice call and instant messaging application
-cask "skype"
 # Team communication and collaboration software
 cask "slack"
 # Video game digital distribution service
