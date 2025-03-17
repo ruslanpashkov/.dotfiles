@@ -100,8 +100,6 @@ cask "alt-tab"
 cask "appcleaner"
 # Desktop password and login vault
 cask "bitwarden"
-# Scriptable scratchpad for developers
-cask "boop"
 # Opensource IDE for exploring and testing api's
 cask "bruno"
 # Write, edit, and chat about your code with AI
@@ -110,16 +108,12 @@ cask "cursor"
 cask "discord"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
-# Google Chromium, sans integration with Google
-cask "eloston-chromium"
 # Desktop client for Filen.io
 cask "filen"
-# Web browser
-cask "firefox@nightly"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Web browser
-cask "google-chrome@canary"
+cask "google-chrome"
 # Open-source screen recorder built with web technology
 cask "kap"
 # Tool to prevent the system from going into sleep mode
@@ -138,24 +132,20 @@ cask "obs"
 cask "obsidian"
 # Replacement for Docker Desktop
 cask "orbstack"
+# Peer to peer Bitorrent client
+cask "qbittorrent"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
-# Web browser
-cask "safari-technology-preview"
 # Screenshot measurement and annotation tool
 cask "shottr"
 # Instant messaging application focusing on security
 cask "signal"
 # Team communication and collaboration software
 cask "slack"
-# Video game digital distribution service
-cask "steam"
 # Messaging app with a focus on speed and security
 cask "telegram"
-# Open-source BitTorrent client
-cask "transmission"
 # Multiplayer code editor
 cask "zed"
 # Video communication and virtual meeting platform
