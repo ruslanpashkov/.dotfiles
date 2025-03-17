@@ -1,7 +1,0 @@
-{
-	"auths": {},
-	"currentContext": "orbstack",
-	"cliPluginsExtraDirs": [
-		"/opt/homebrew/lib/docker/cli-plugins"
-	]
-}
