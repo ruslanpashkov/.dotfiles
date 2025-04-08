@@ -34,8 +34,6 @@
     ~/.zprofile: zsh/.zprofile
     ~/.zfunc/_rustup: zsh/.zfunc/_rustup
 
-    ~/.local/bin/macos-preferences: macos/preferences.sh
-
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
 
