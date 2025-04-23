@@ -23,7 +23,7 @@
   "theme": {
     "mode": "system",
     "light": "Catppuccin Latte",
-    "dark": "Catppuccin Mocha"
+    "dark": "Catppuccin Frappé"
   },
   "telemetry": {
     "metrics": false,

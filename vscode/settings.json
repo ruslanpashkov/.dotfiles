@@ -8,8 +8,8 @@
   "workbench.layoutControl.enabled": false,
   "workbench.activityBar.location": "top",
   "workbench.sideBar.location": "left",
-  "workbench.colorTheme": "Catppuccin Mocha",
-  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.colorTheme": "Catppuccin Frappé",
+  "workbench.iconTheme": "catppuccin-frappe",
   "workbench.productIconTheme": "icons-carbon",
 
   "window.commandCenter": false,
