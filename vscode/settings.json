@@ -7,7 +7,7 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.layoutControl.enabled": false,
   "workbench.activityBar.location": "top",
-  "workbench.sideBar.location": "left",
+  "workbench.sideBar.location": "right",
   "workbench.colorTheme": "Catppuccin Frappé",
   "workbench.iconTheme": "catppuccin-frappe",
   "workbench.productIconTheme": "icons-carbon",
