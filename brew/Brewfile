@@ -1,5 +1,3 @@
-tap "homebrew/bundle"
-tap "homebrew/services"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
 # Command-line interface for SQLite
