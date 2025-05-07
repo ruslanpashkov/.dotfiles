@@ -4,7 +4,7 @@
       force: true
       create: true
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
     ~/.gitconfig: git/.gitconfig
@@ -37,4 +37,3 @@
     ~/.local/bin/: bin/
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-
