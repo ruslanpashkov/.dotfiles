@@ -29,6 +29,7 @@
     ~/.config/zed/settings.json: zed/settings.json
 
     ~/.config/Code/User/settings.json: vscode/settings.json
+    ~/.config/cursor/default.code-profile: cursor/default.code-profile
 
     ~/.zshrc: zsh/.zshrc
     ~/.zprofile: zsh/.zprofile
