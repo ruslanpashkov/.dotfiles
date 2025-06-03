@@ -17,9 +17,6 @@
   "features": {
     "edit_prediction_provider": "zed"
   },
-  "project_panel": {
-    "dock": "right"
-  },
   "theme": {
     "mode": "system",
     "light": "Catppuccin Latte",
