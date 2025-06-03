@@ -14,6 +14,9 @@
 
     ~/.tool-versions: asdf/.tool-versions
 
+    ~/.hammerspoon/init.lua: hammerspoon/init.lua
+    ~/.hammerspoon/terminal.lua: hammerspoon/terminal.lua
+
     ~/.config/aerospace/aerospace.toml: aerospace/aerospace.toml
 
     ~/.config/linearmouse/linearmouse.json: linearmouse/linearmouse.json
