@@ -1,7 +1,7 @@
 if [[ "$(uname)" == "Darwin" ]]; then
   eval $(/opt/homebrew/bin/brew shellenv)
 
-  export HOMEBREW_NO_INSTALL_CLEANUP=0
+  export HOMEBREW_NO_INSTALL_CLEANUP=
 
   # Added by OrbStack: command-line tools and integration
   # This won't be added again if you remove it.
