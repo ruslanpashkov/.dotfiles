@@ -36,7 +36,7 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 plugins=(
   git
-  asdf
+  mise
   docker
   kubectl
 

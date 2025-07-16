@@ -12,8 +12,6 @@
 
     ~/.Brewfile: brew/Brewfile
 
-    ~/.tool-versions: asdf/.tool-versions
-
     ~/.hammerspoon/init.lua: hammerspoon/init.lua
     ~/.hammerspoon/terminal.lua: hammerspoon/terminal.lua
 
