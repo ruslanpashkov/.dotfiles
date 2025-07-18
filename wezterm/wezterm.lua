@@ -23,14 +23,14 @@ config.hide_tab_bar_if_only_one_tab = true
 config.colors = {
     foreground = colors.fg.bright,
     background = colors.bg.base,
-    
+
     cursor_bg = colors.fg.dim,
     cursor_fg = colors.bg.base,
     cursor_border = colors.fg.dim,
-    
+
     selection_fg = colors.fg.bright,
     selection_bg = colors.bg.selection,
-    
+
     ansi = {
         colors.ansi.black,
         colors.ansi.red,
@@ -41,7 +41,7 @@ config.colors = {
         colors.ansi.cyan,
         colors.ansi.white,
     },
-    
+
     brights = {
         colors.bright.black,
         colors.bright.red,
@@ -52,10 +52,10 @@ config.colors = {
         colors.bright.cyan,
         colors.bright.white,
     },
-    
+
     tab_bar = {
         background = colors.bg.darker,
-        
+
         active_tab = {
             bg_color = colors.bg.base,
             fg_color = colors.fg.bright,
@@ -64,7 +64,7 @@ config.colors = {
             italic = false,
             strikethrough = false,
         },
-        
+
         inactive_tab = {
             bg_color = colors.bg.darker,
             fg_color = colors.fg.dimmer,
@@ -73,12 +73,12 @@ config.colors = {
             italic = false,
             strikethrough = false,
         },
-        
+
         new_tab = {
             bg_color = colors.bg.darker,
             fg_color = colors.fg.dimmer,
         },
-        
+
         new_tab_hover = {
             bg_color = colors.bg.selection,
             fg_color = colors.fg.bright,
@@ -103,4 +103,3 @@ config.window_background_opacity = 1.0
 config.text_background_opacity = 1.0
 
 return config
-

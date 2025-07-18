@@ -1,6 +1,6 @@
 # Fix for unreliable profile sourcing, eg. switching to a second TTY
 if [[ -z "$PROFILE_SOURCED" ]]; then
-    source ~/.zprofile
+  source ~/.zprofile
 fi
 
 export ZSH="$HOME/.oh-my-zsh"
@@ -58,8 +58,8 @@ plugins=(
 
   command-not-found
   fast-syntax-highlighting
-  zsh-autocomplete
   zsh-autosuggestions
+  zsh-autocomplete
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -79,9 +79,9 @@ alias vim='nvim'
 alias reload='source ~/.zshrc'
 
 if [[ "$(uname)" == "Darwin" ]]; then
-    alias clip='pbcopy'
+  alias clip='pbcopy'
 else
-    alias clip='xclip -in -selection clipboard'
+  alias clip='xclip -in -selection clipboard'
 fi
 
 mkcd() {
@@ -93,15 +93,15 @@ fh() {
 }
 
 tm() {
-    local session=${1:-tmux}
+  local session=${1:-tmux}
 
-    if ! tmux has-session 2>/dev/null; then
-        tmux new-session -s "$session"
-    else
-        if [ -z "$TMUX" ]; then
-            tmux attach-session
-        fi
+  if ! tmux has-session 2>/dev/null; then
+    tmux new-session -s "$session"
+  else
+    if [ -z "$TMUX" ]; then
+      tmux attach-session
     fi
+  fi
 }
 
 setopt AUTO_CD
