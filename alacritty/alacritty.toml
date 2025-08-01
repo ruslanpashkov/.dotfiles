@@ -1,17 +1,35 @@
-[general]
-import = ["~/.config/alacritty/themes/catppuccin-frappe.toml"]
-live_config_reload = true
-
-[env]
-TERM = "xterm-256color"
-
 [font]
-size = 16
+normal = { family = "FiraCode Nerd Font Mono", style = "Regular" }
+size = 16.5
 
-[window]
-decorations = "full"
-dynamic_padding = true
+[colors.primary]
+background = "#1f1f1f"
+foreground = "#fafafa"
 
-[window.padding]
-x = 0
-y = 0
+[colors.cursor]
+text = "#1f1f1f"
+cursor = "#fafafa"
+
+[colors.selection]
+text = "#fafafa"
+background = "#212121"
+
+[colors.normal]
+black = "#1a1a1a"
+red = "#e56375"
+green = "#75b975"
+yellow = "#f0b362"
+blue = "#79b8ff"
+magenta = "#b392f0"
+cyan = "#9db1c5"
+white = "#c0c0c0"
+
+[colors.bright]
+black = "#5c5c5c"
+red = "#ff7a84"
+green = "#85dc85"
+yellow = "#ffc966"
+blue = "#93cbff"
+magenta = "#c4a9f3"
+cyan = "#b8cce0"
+white = "#dedede"
