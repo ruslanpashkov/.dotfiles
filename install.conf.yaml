@@ -9,32 +9,20 @@
 - link:
     ~/.gitconfig: git/.gitconfig
     ~/.gitignore: git/.gitignore
-
-    ~/.Brewfile: brew/Brewfile
-
-    ~/.hammerspoon/init.lua: hammerspoon/init.lua
-    ~/.hammerspoon/terminal.lua: hammerspoon/terminal.lua
-
-    ~/.config/aerospace/aerospace.toml: aerospace/aerospace.toml
-
-    ~/.config/linearmouse/linearmouse.json: linearmouse/linearmouse.json
-
-    ~/.config/tmux/tmux.conf: tmux/tmux.conf
-    ~/.config/tmux/theme.tmux: tmux/theme.tmux
-
-    ~/.config/wezterm/wezterm.lua: wezterm/wezterm.lua
-    ~/.config/wezterm/colors.lua: wezterm/colors.lua
-
-    ~/.config/ghostty/config: ghostty/config
-
-    ~/.config/zed/settings.json: zed/settings.json
-
-    ~/.config/Code/User/settings.json: vscode/settings.json
-
     ~/.zshrc: zsh/.zshrc
     ~/.zprofile: zsh/.zprofile
-    ~/.zfunc/_rustup: zsh/.zfunc/_rustup
-
+    ~/.zfunc/: zsh/.zfunc/
+    ~/.config/tmux/: tmux/
+    ~/.config/alacritty/: alacritty/
+    ~/.config/wezterm/: wezterm/
+    ~/.config/ghostty/: ghostty/
+    ~/.config/zed/: zed/
+    ~/.config/Code/: vscode/
+    ~/.config/cursor/: cursor/
+    ~/.config/brewfile/: brewfile/
+    ~/.config/hammerspoon/: hammerspoon/
+    ~/.config/aerospace/: aerospace/
+    ~/.config/linearmouse/: linearmouse/
     ~/.local/bin/: bin/
 
 - shell:
