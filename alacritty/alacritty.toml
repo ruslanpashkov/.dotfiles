@@ -1,0 +1,17 @@
+[general]
+import = ["~/.config/alacritty/themes/catppuccin-frappe.toml"]
+live_config_reload = true
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 16
+
+[window]
+decorations = "full"
+dynamic_padding = true
+
+[window.padding]
+x = 0
+y = 0
