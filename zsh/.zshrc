@@ -3,15 +3,27 @@ if [[ -z "$PROFILE_SOURCED" ]]; then
   source ~/.zprofile
 fi
 
-export ZSH="$HOME/.oh-my-zsh"
+ZINIT_DIR="$HOME/.local/share/zinit/zinit.git"
+ZINIT_FILE="$ZINIT_DIR/zinit.zsh"
 
-ZSH_THEME="robbyrussell"
+if [[ ! -f "$ZINIT_FILE" ]]; then
+  mkdir -p "${ZINIT_DIR%/*}" && chmod g-rwX "${ZINIT_DIR%/*}"
+  git clone https://github.com/zdharma-continuum/zinit "$ZINIT_DIR"
+fi
+
+source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
+
+setopt promptsubst
 
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
+HISTDUP=erase
+
+setopt HIST_IGNORE_SPACE
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_SAVE_NO_DUPS
+setopt HIST_FIND_NO_DUPS
 setopt HIST_REDUCE_BLANKS
 setopt INC_APPEND_HISTORY
 setopt EXTENDED_HISTORY
@@ -26,6 +38,32 @@ pastefinish() {
   zle -N self-insert $OLD_SELF_INSERT
 }
 
+eval "$(dircolors -b)"
+
+ZSH_THEME="robbyrussell"
+
+zinit snippet OMZT::$ZSH_THEME
+zinit snippet OMZL::async_prompt.zsh
+zinit snippet OMZL::git.zsh
+zinit snippet OMZP::git
+zinit snippet OMZP::mise
+zinit snippet OMZP::kubectl
+zinit snippet OMZP::man
+zinit snippet OMZP::colored-man-pages
+zinit snippet OMZP::extract
+zinit snippet OMZP::tldr
+zinit snippet OMZP::eza
+zinit snippet OMZP::dirhistory
+zinit snippet OMZP::copypath
+zinit snippet OMZP::tmux
+zinit snippet OMZP::fzf
+zinit snippet OMZP::ssh
+zinit snippet OMZP::brew
+zinit snippet OMZP::command-not-found
+zinit light marlonrichert/zsh-autocomplete
+zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-syntax-highlighting
+
 zstyle ':bracketed-paste-magic' paste-init pasteinit
 zstyle ':bracketed-paste-magic' paste-finish pastefinish
 
@@ -34,55 +72,48 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*' special-dirs true
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
-plugins=(
-  git
-  mise
-  docker
-  kubectl
-
-  man
-  colored-man-pages
-  extract
-  tldr
-
-  eza
-  dirhistory
-  copypath
-
-  tmux
-  fzf
-
-  ssh
-
-  brew
-
-  command-not-found
-  fast-syntax-highlighting
-  zsh-autosuggestions
-  zsh-autocomplete
-)
-
-source $ZSH/oh-my-zsh.sh
-
 fpath+=~/.zfunc
 path+=($HOME/.local/bin)
 
-alias ll='eza -la'
-alias tree='eza --tree'
-alias cd..='cd ..'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias mkdir='mkdir -p'
 alias cp='cp -i'
 alias rm='rm -i'
-alias vim='nvim'
+alias mv='mv -i'
+alias ln='ln -i'
+alias df='df -h'
+alias du='du -h'
+alias ps='ps aux'
+alias psg='ps aux | grep -v grep | grep -i'
+alias path='echo $PATH | tr ":" "\n"'
+alias myip='curl -s ifconfig.me'
 alias reload='source ~/.zshrc'
 
-if [[ "$(uname)" == "Darwin" ]]; then
-  alias clip='pbcopy'
+if [[ "$(uname -s)" == "Darwin" ]]; then
+  CLIP_COPY=(pbcopy)
+  CLIP_PASTE=(pbpaste)
+elif grep -qEi "(Microsoft|WSL)" /proc/version 2>/dev/null && command -v win32yank.exe &>/dev/null; then
+  CLIP_COPY=(win32yank.exe -i --crlf)
+  CLIP_PASTE=(win32yank.exe -o --lf)
+elif [ -n "$WAYLAND_DISPLAY" ] && command -v wl-copy &>/dev/null && command -v wl-paste &>/dev/null; then
+  CLIP_COPY=(wl-copy)
+  CLIP_PASTE=(wl-paste)
+elif command -v xclip &>/dev/null; then
+  CLIP_COPY=(xclip -selection clipboard -i)
+  CLIP_PASTE=(xclip -selection clipboard -o)
 else
-  alias clip='xclip -in -selection clipboard'
+  CLIP_COPY=()
+  CLIP_PASTE=()
 fi
+
+clip() {
+  if [ -t 0 ]; then
+    "${CLIP_PASTE[@]}"
+  else
+    "${CLIP_COPY[@]}"
+  fi
+}
 
 mkcd() {
   mkdir -p "$1" && cd "$1"
@@ -114,3 +145,4 @@ bindkey "^[[1;5D" backward-word
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 bindkey "^[[3~" delete-char
+
